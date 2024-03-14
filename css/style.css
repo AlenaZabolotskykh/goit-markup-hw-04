@@ -139,7 +139,10 @@ h1,h2,h3,h4,h5,h6,p {
   background: #2e2f42;
   display: flex;
   padding: 188px 0;
-}
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
 
 .hero-flex {
   display: flex;
@@ -187,11 +190,12 @@ h1,h2,h3,h4,h5,h6,p {
 .features-list {
   display: flex;
   gap: 24px;
-
   }
+
 .features-item {
   width: calc((100% - 24px * 3) / 4);
 }
+
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
