@@ -57,7 +57,6 @@ p {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -88,6 +87,7 @@ p {
   color: #2e2f42;
 }
 
+
 .header-menu-list {
   display: flex;
   gap: 40px;
@@ -106,6 +106,19 @@ p {
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #404bbf;
+}
+.studio {
+  padding-bottom: 0;
+}
+
+.studio::after {
+content: '';
+background-color:#404bbf;
+border-radius: 2px;
+width: 48px;
+height: 4px;
+display: block;
+margin-top: 20px;
 }
 
 .header-address {
@@ -140,6 +153,8 @@ p {
   background: #2e2f42;
   display: flex;
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -288,7 +303,7 @@ p {
   gap: 24px;
 }
 
-.social-link-team {
+.icon-team {
   fill: #f4f4fd;
   width: 40px;
   height: 40px;
@@ -380,13 +395,13 @@ p {
   max-width: 267px;
 }
 
-.subtitle-footer {
+.footer-subtitle {
   font-weight: 500;
   font-size: 16px;
   color: #fff;
 }
 
-.social-footer-link {
+.footer-icon {
   fill: #f4f4fd;
   width: 40px;
   height: 40px;
@@ -397,10 +412,18 @@ p {
   align-items: center;
 }
 
-.social-footer-list {
+.footer-list {
   display: flex;
   padding-top: 16px;
   gap: 16px;
 }
 
+.footer-colomn {
+  display: inline-block;
+  align-items: top;
+  vertical-align: top;
+  }
 
+.icon-colomn {
+  margin-left: 120px;
+}
